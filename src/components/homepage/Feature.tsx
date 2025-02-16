@@ -11,10 +11,10 @@ const Feature = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), [])
 
   const features = [
-    t('Powerfull online protection.'),
-    t('Internet without borders.'),
-    t('Supercharged VPN'),
-    t('No specific time limits.'),
+    t('Building Secure and Robust Systems.'),
+    t('Optimizing API Performance.'),
+    t('Scalability and Reliability.'),
+    t('Writing Clean and Maintainable Code.'),
   ]
 
   return (
@@ -38,11 +38,11 @@ const Feature = () => {
             variants={scrollAnimation}
           >
             <h3 className='text-3xl font-medium leading-relaxed text-template-black-600 lg:text-4xl'>
-              {t('We Provide Many Features You Can Use')}
+              {t('I Am A Passionate Developer Who Loves Creating Useful Software')}
             </h3>
             <p className='my-2 text-template-black-500'>
               {t(
-                'You can explore the features that we provide with fun and have their own functions each feature.'
+                'With a strong focus on security, reliability, and efficiency, I design and optimize backend architectures that drive seamless digital experiences. My expertise includes:'
               )}
             </p>
             <ul className='ml-8 list-inside self-start text-template-black-500'>

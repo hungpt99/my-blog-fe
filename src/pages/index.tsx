@@ -1,11 +1,12 @@
 import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
+import Feature from 'components/homepage/Feature'
+import Hero from 'components/homepage/Hero'
+// import Pricing from 'components/homepage/Pricing'
+import TechStack from 'components/homepage/TechStack'
 import Layout from 'components/layout/Layout'
 import SEOHead from 'components/seo'
-import Feature from 'components/template/Feature'
-import Hero from 'components/template/Hero'
-import Pricing from 'components/template/Pricing'
 
 type Props = {
   // Add custom props here
@@ -20,11 +21,12 @@ export const getStaticProps: GetStaticProps<Props> = async ({ locale }) => ({
 const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <>
-      <SEOHead title='My page example' />
+      <SEOHead title='Home' />
       <Layout>
         <Hero />
         <Feature />
-        <Pricing />
+        <TechStack />
+        {/* <Pricing /> */}
       </Layout>
     </>
   )

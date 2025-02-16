@@ -5,9 +5,9 @@ import type { SEOProps } from 'types/seo.type'
 
 // Default value for some meta data
 const defaultMeta = {
-  title: 'LaslesVPN',
-  siteName: 'LaslesVPN',
-  description: 'Landing page VPN LaslesVPN Best VPN For Privacy, Country and Cheapest',
+  title: 'LowkeyDev',
+  siteName: 'LowkeyDev',
+  description: 'LowkeyDev Blog',
   // change base url of your web (without '/' at the end)
   url: 'http://localhost:9999',
   type: 'website',

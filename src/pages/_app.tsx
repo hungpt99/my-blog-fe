@@ -8,8 +8,10 @@ import { Provider as ReduxProvider } from 'react-redux'
 
 import { ProtectedLayout } from 'components/layout/ProtectedLayout'
 import { store } from 'redux/store'
+
 import 'styles/globals.css'
 import 'styles/template.scss'
+import themeConfig from 'theme/theme'
 
 type AppPropsWithAuth = AppProps<{ session: Session }> & {
   Component: {
@@ -20,7 +22,7 @@ type AppPropsWithAuth = AppProps<{ session: Session }> & {
 const App = ({ Component, pageProps: { session, ...pageProps } }: AppPropsWithAuth) => {
   return (
     <ReduxProvider store={store}>
-      <ConfigProvider>
+      <ConfigProvider theme={themeConfig}>
         <StyleProvider hashPriority='high'>
           <SessionProvider session={session}>
             {Component.requireAuth ? (
