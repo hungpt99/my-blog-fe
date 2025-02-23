@@ -98,7 +98,7 @@ const BlogPage: React.FC = () => {
     const matchesCategory = selectedCategory !== 'All' ? blog.category === selectedCategory : true
     const matchesTags =
       selectedTags.length === 0 ||
-      (blog.tags && selectedTags.every((tag) => blog.tags.includes(tag)))
+      (blog.tags && selectedTags.every((tag) => blog?.tags?.includes(tag)))
 
     return matchesSearch && matchesCategory && matchesTags
   })

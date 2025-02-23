@@ -22,7 +22,7 @@ const Header = () => {
         }`}
       >
         <nav className='container mx-auto grid grid-flow-col px-8 py-3 sm:py-4 xl:px-16'>
-          <div className='col-start-1 col-end-2 flex items-center'>
+          <Link href='/' className='col-start-1 col-end-2 flex items-center'>
             <Image
               src='/assets/images/Logo.svg'
               alt='Logo'
@@ -31,7 +31,7 @@ const Header = () => {
               className='h-8 w-auto'
             />
             <span className='ml-4 text-xl font-bold text-template-black-500'>LowkeyDev</span>
-          </div>
+          </Link>
           {/* Move the nav items to the right */}
           <ul className='col-start-4 col-end-8 ml-auto hidden items-center text-template-black-500 lg:flex'>
             {NAV_ITEMS.map(({ id, label, href }) => (

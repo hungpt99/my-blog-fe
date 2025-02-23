@@ -28,7 +28,6 @@ export const BLOG_CATEGORIES = [
 
 // Navigation items for the header or sidebar
 export const NAV_ITEMS = [
-  { id: 'home', label: 'Home', href: '/' },
   { id: 'project', label: 'Project', href: '/project' },
   { id: 'blog', label: 'Blog', href: '/blog' },
   { id: 'faq', label: 'FAQ', href: '/comming-soon' },
